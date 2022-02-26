@@ -1,0 +1,10 @@
+<p>customerdashboard works!</p>
+<a [routerLink]="['/customerdashboard',{outlets:{'mphasis': ['showrestaurant']}}]">Showrestaurant</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/customerdashboard',{outlets:{'mphasis': ['showallcustomer']}}]">Showallcustomer</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/customerdashboard',{outlets:{'mphasis': ['showcustomerwallet']}}]">Showcustomerwallet</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/customerdashboard',{outlets:{'mphasis': ['placeorder']}}]">Placeorder</a>
+
+<router-outlet name='mphasis'></router-outlet>

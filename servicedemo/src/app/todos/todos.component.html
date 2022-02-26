@@ -1,0 +1,19 @@
+
+<p>todos works!</p>
+<table border="3">
+    <tr>
+        <th>userId</th>
+        <th>id</th>
+        <th>title</th>
+        <th>completed</th>
+        
+    </tr>
+    <tr *ngFor="let t of todos">
+        <td>{{t.userId}} </td>
+        <td>{{t.id}} </td>
+        <td>{{t.title}} </td>
+        <td>{{t.completed}} </td>
+        
+        
+    </tr>
+</table>

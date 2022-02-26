@@ -1,0 +1,25 @@
+
+hello<!-- <p>menu works!</p>
+
+<a [routerLink]=" ['first']">First</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]=" ['second']">Second</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]=" ['third']">Third</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]=" ['fourth']">Fourth</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]=" ['employdropdown']">Employdropdown</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]=" ['calc']">Calc</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]=" ['employ']">Employ</a> -->
+<a [routerLink]="['/menu',{outlets:{'mphasis': ['first']}}]">First</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets:{'mphasis': ['second']}}]">Second</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets:{'mphasis': ['third']}}]">Third</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/menu',{outlets:{'mphasis': ['calc']}}]">Calc</a>
+
+<router-outlet name='mphasis'></router-outlet>
